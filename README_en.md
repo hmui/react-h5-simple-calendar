@@ -1,4 +1,4 @@
-# react-h5-calendar
+# react-h5-simple-calendar
 
 [简体中文](https://github.com/hmui/react-h5-simple-calendar/blob/main/README.md) | English
 
@@ -18,7 +18,7 @@ A react-based mobile , h5 calendar display component
 
 ### Install
 
-`yarn add react-h5-calendar | npm i react-h5-simple-calendar`
+`yarn add react-h5-simple-calendar | npm i react-h5-simple-calendar`
 
 ```js
 import dayjs from 'dayjs';
