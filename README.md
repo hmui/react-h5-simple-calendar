@@ -7,7 +7,7 @@
 
 ###
 
-一款基于 react 的移动端，mobile，h5 精简版日历展示组件。
+一款基于 react 的移动端，h5 精简版日历展示组件。
 
 ### react 移动端日历组件
 
@@ -57,10 +57,10 @@ export default SimpleCalendar;
 
 | 参数                 | 说明                                                                     | 默认值                                                               |
 | :------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------------------- |
-| `currentDate`        | 当前选择的日期 比如:`2024-02-19`                                         | `undefined`                                                          |
+| `currentDate`        | 当前选择的日期（默认当天），搭配 onChange 使用。比如:`2024-02-19`        |                                                                      |
 | `showType`           | 展示类型支持`month` 和 `week`                                            | `'month'`                                                            |
 | `transitionDuration` | 切换日期的动画过渡时间                                                   | `0.3`                                                                |
-| `onChange`           | 日期点击回调                                                             | `(dateStr: string, date: dayjs.Dayjs) => {}`                         |
+| `onChange`           | 日期选中回调                                                             | `(dateStr: string, date: dayjs.Dayjs) => {}`                         |
 | `onTouchStart`       | 滑动开始回调                                                             | `() => {}`                                                           |
 | `onTouchMove`        | 滑动过程中回调                                                           | `() => {}`                                                           |
 | `onSlideChange`      | 滑动结束回调                                                             | `({ range: [string, string], date: string, dateStr: string }) => {}` |

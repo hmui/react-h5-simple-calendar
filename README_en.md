@@ -4,7 +4,7 @@
 
 ###
 
-A react-based mobile , h5 calendar display component
+A react-based mobile, h5 calendar display component
 
 ### react Mobile calendar component
 
@@ -52,21 +52,21 @@ export default SimpleCalendar;
 
 ### Settings
 
-| parameter            | description                                                             | default                                                              |
-| :------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------- |
-| `currentDate`        | Currently selected date eg:`2024-02-19`                                 | `undefined`                                                          |
-| `showType`           | display type`month` & `week`                                            | `'month'`                                                            |
-| `transitionDuration` | Animation transition time for switching date                            | `0.3`                                                                |
-| `onChange`           | Date click callback                                                     | `(dateStr: string, date: dayjs.Dayjs) => {}`                         |
-| `onTouchStart`       | Swipe to start callback                                                 | `() => {}`                                                           |
-| `onTouchMove`        | Callback during sliding                                                 | `() => {}`                                                           |
-| `onSlideChange`      | Sliding end callback                                                    | `({ range: [string, string], date: string, dateStr: string }) => {}` |
-| `onToggleShowType`   | Switch the monthly and weekly view callbacks                            | `({ showType: string, startTime: string, endTime: string }) => {}`   |
-| `markType`           | Mark type `dot`&`circle`                                                | `'dot'`                                                              |
-| `markDates`          | Array of dates to be marked                                             | `[]`                                                                 |
-| `disableView`        | The monthly and weekly views cannot be switched                         | `false`                                                              |
-| `language`           | Language 'zh-CN'、'en-US'                                               | `'zh-CN'`                                                            |
-| `customHeader`       | Custom header（< 2024-02 >），boolean、({ dateStr, date }) => ReactNode | `false`                                                              |
+| parameter            | description                                                                        | default                                                              |
+| :------------------- | :--------------------------------------------------------------------------------- | :------------------------------------------------------------------- |
+| `currentDate`        | The currently selected date (default today) is used with onChange. eg:`2024-02-19` |                                                                      |
+| `showType`           | display type`month` & `week`                                                       | `'month'`                                                            |
+| `transitionDuration` | Animation transition time for switching date                                       | `0.3`                                                                |
+| `onChange`           | Date selected callback                                                             | `(dateStr: string, date: dayjs.Dayjs) => {}`                         |
+| `onTouchStart`       | Swipe to start callback                                                            | `() => {}`                                                           |
+| `onTouchMove`        | Callback during sliding                                                            | `() => {}`                                                           |
+| `onSlideChange`      | Sliding end callback                                                               | `({ range: [string, string], date: string, dateStr: string }) => {}` |
+| `onToggleShowType`   | Switch the monthly and weekly view callbacks                                       | `({ showType: string, startTime: string, endTime: string }) => {}`   |
+| `markType`           | Mark type `dot`&`circle`                                                           | `'dot'`                                                              |
+| `markDates`          | Array of dates to be marked                                                        | `[]`                                                                 |
+| `disableView`        | The monthly and weekly views cannot be switched                                    | `false`                                                              |
+| `language`           | Language 'zh-CN'、'en-US'                                                          | `'zh-CN'`                                                            |
+| `customHeader`       | Custom header（< 2024-02 >），boolean、({ dateStr, date }) => ReactNode            | `false`                                                              |
 
 ### `markDates` Parameter Description
 
