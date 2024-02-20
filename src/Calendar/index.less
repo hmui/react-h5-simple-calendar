@@ -41,10 +41,11 @@
 
     .head-cell {
       display: flex;
-      flex-basis: 14.2857%;
+      // flex-basis: 14.2857%;
+      flex: 1;
       align-items: center;
       justify-content: center;
-      height: 34px;
+      height: 36px;
 
       &.gray {
         color: rgba(0, 0, 0, 50%);
@@ -54,11 +55,11 @@
 
   .calendar-body {
     position: relative;
-    height: 216px;
+    height: 240px;
     transition: height 0.3s;
 
     &.week-mode {
-      height: 36px;
+      height: 40px;
     }
 
     .month-cell {
@@ -77,7 +78,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 36px;
+        height: 40px;
 
         &.is-other-month-day {
           color: #999;
@@ -87,8 +88,8 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 32px;
-          height: 32px;
+          width: 36px;
+          height: 36px;
         }
 
         .is-current-date {
